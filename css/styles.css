@@ -90,6 +90,11 @@ word-break: break-word;
 #wikipedia img{
     max-width: 80%;
 }
+.error{
+    color: rgba(255, 0, 0, 0.47);
+text-shadow: 1px 1px 1px rgba(206, 87, 87, 0.75);
+}
+
 /**Scroll bar **/
 
 ::-webkit-scrollbar {
