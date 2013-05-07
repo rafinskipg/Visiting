@@ -20,27 +20,32 @@
             <!-- More at bottom of page  -->
     </head>
     <body>
-        <div class="container">
-            <header class="row">
-                <h1 class="text-center" class="span12">What city do you want to visit?</h1>
+        <header class="row">
+                <div class="menu span12">
+                    <div class="row">
+                        <div class="back span2"></div>
+                    </div>
+                    
+                </div>
             </header>
-            <section >
+        <div class="container">
+            
+            <section class="main" >
                 <div class="cityInput">
                     <div class="row">
                         <div class="span4 offset4">
+                        <h1 class="text-center">Visitable</h1>
                         <input type="text" placeholder="Name of the city..." id="city" class=""/>
                          </div>
                     </div>
-                    <div class="row">    
-                        <div class="span4 offset4">
-                            <input class="btn" type="submit" id="search" value="Search"/>
-                         </div>
-                    </div>
+                   
                 </div>
-                
-                <section id="information">
+
+            </section>
+            <section id="information">
                     <div class="row" >
-                       <div class="span4 offset4">
+                       <div class="span12">
+                            <h3>Weather Info</h3>
                             <div id="chart"></div>
                        </div>
                     </div>
@@ -57,8 +62,12 @@
                             
                             <ul id="events">
                             </ul>
-                            
-                          </div>
+                            <div class="eventful-badge eventful-small">
+                              <img src="http://api.eventful.com/images/powered/eventful_58x20.gif"
+                                alt="Local Events, Concerts, Tickets">
+                              <p><a href="http://eventful.com/">Events</a> by Eventful</p>
+                            </div>
+                      </div>
                         </div>
                       </div>
                       <div class="accordion-group">
@@ -77,13 +86,13 @@
                       </div>
                     </div>
                 </section>
-                
-            </section>
         </div>
     </body>
     
 
     <script type="text/javascript" src="js/lib/chart.js"></script>  
     <script type="text/javascript" src="js/app.js"></script>  
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
 
 </html>

@@ -1,12 +1,47 @@
 body{
-    background-color: white;
-    color: black;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+   
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3em;
+}
+h1{
+    text-shadow: 1px 3px 4px rgba(1,1,1,1);
 }
 section {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.menu{
+    background-color: black;
+    width: 100%;
+    display:none;
+}
+.back{
+    background-image: url('../img/BackArrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+    cursor: pointer;
+}
+.main{
+    margin-top: 40%;
+}
+h3{
+    color: black;
+text-align: center;
+}
+#information{
+    background:rgba(255, 255, 255, 0.63);
+    
+    padding-top: 30px;
+}
+
+#city{
+    border:4px solid rgb(133, 133, 228);
+    height: 40px;
+    width: 95%;
 }
 a:hover {
     text-decoration: none;
@@ -14,4 +49,99 @@ a:hover {
 #accordion2{
     height: auto !important;
     min-height: 100px;
+}
+.badge{
+    float: left;
+margin-right: 10px;
+}
+#events{
+    list-style: none;
+    height: 300px;
+overflow-y: scroll;
+margin: 0;
+}
+#events li{
+    padding: 5px;
+clear: both;
+color: black;
+border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+height: 85px;
+}
+#events img{
+    width: 80px;
+    margin-right: 5px;
+    float: left;
+}
+#wikipedia{
+    height: 300px;
+overflow-y: scroll;
+font-size: 12px;
+text-align: left;
+color: black;
+background: rgba(255, 255, 255, 0.78);
+padding: 11px;
+max-width: 100%;
+word-break: break-word;
+}
+#wikipeadia div{
+    word-break: break-word;
+    width: 90% !important;
+}
+#wikipedia img{
+    max-width: 80%;
+}
+/**Scroll bar **/
+
+::-webkit-scrollbar {
+margin-right: 5px;
+background-color: #ddd;
+width: 10px;
+}
+::-webkit-scrollbar-thumb {
+border: 1px #eee solid;
+border-radius: 4px;
+background: #777;
+-webkit-box-shadow: 0 0 8px #555 inset;
+box-shadow: 0 0 8px #555 inset;
+-webkit-transition: all .3s ease-out;
+transition: all .3s ease-out;
+}
+::-webkit-scrollbar-track {
+-webkit-box-shadow: 0 0 2px #ccc;
+box-shadow: 0 0 2px #ccc;
+}
+
+
+
+.eventful-badge,
+.eventful-badge * {
+  margin: 0             !important;
+  padding: 0            !important;
+  border: 0             !important;
+  text-align: center    !important;
+  color: #CCC           !important;
+  font-family: Arial    !important;
+  text-decoration: none !important;
+}
+
+.eventful-large {
+  position: relative    !important;
+  width: 140px          !important;
+  font-size: 15px       !important;
+  line-height: 17px     !important;
+  font-weight: bold     !important;
+}
+
+.eventful-medium {
+  position: relative    !important;
+  width: 100px          !important;
+  font-size: 12px       !important;
+  line-height: 13px     !important;
+}                     
+                      
+.eventful-small {     
+  position: relative    !important;
+  width: 100px          !important;
+  font-size: 11px       !important;
+  line-height: 11px     !important;
 }
