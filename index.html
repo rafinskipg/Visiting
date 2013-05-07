@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Visiting</title>
+          <!-- CSS FILES -->
+            <!-- This is twitter Bootstrap -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+            <link href="css/bootstrap-responsive.css" rel="stylesheet">
+            
+            <!-- There the page styles -->
+            <link href="css/styles.css" rel="stylesheet">
+        
+        <!-- JS Files -->
+            <!-- This is Jquery -->
+            <script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>  
+            <!-- This is twitter Bootstrap -->            
+            <script type="text/javascript" src="js/lib/bootstrap.js"></script>        
+            <script type="text/javascript" src="js/lib/edvb.js"></script>        
+            <!-- More at bottom of page  -->
+    </head>
+    <body>
+        <div class="container">
+            <header class="row">
+                <h1 class="text-center" class="span12">What city do you want to visit?</h1>
+            </header>
+            <section >
+                <div class="cityInput">
+                    <div class="row">
+                        <div class="span4 offset4">
+                        <input type="text" placeholder="Name of the city..." id="city" class=""/>
+                         </div>
+                    </div>
+                    <div class="row">    
+                        <div class="span4 offset4">
+                            <input class="btn" type="submit" id="search" value="Search"/>
+                         </div>
+                    </div>
+                </div>
+                
+                <section id="information">
+                    <div class="row" >
+                       <div class="span4 offset4">
+                            <div id="chart"></div>
+                       </div>
+                    </div>
+                    <div class="accordion" id="accordion2">
+                      <div class="accordion-group">
+                        <div class="accordion-heading">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            <div id="ammount"></div> Events
+                          </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                          <div class="accordion-inner">
+                            
+                            
+                            <ul id="events">
+                            </ul>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-group">
+                        <div class="accordion-heading">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            Wikipedia
+                          </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                          <div class="accordion-inner">
+                            <div class="" id="wikipedia">
+                            
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+                
+            </section>
+        </div>
+    </body>
+    
+
+    <script type="text/javascript" src="js/lib/chart.js"></script>  
+    <script type="text/javascript" src="js/app.js"></script>  
+
+</html>

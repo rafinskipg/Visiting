@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+}
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a:hover {
+    text-decoration: none;
+}
+#accordion2{
+    height: auto !important;
+    min-height: 100px;
+}
